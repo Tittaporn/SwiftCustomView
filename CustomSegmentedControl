@@ -1,0 +1,27 @@
+
+//  SegmentedControlRMS.swift
+
+import UIKit
+
+class SegmentedControlRMS: UISegmentedControl {
+    override  func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
+    }
+    
+    func setupView() {
+        let titleFont : UIFont = .rms14?.bold() ??  UIFont.systemFont(ofSize: 14)
+        let attributes = [
+            NSAttributedString.Key.foregroundColor : UIColor.rmsGray,
+            NSAttributedString.Key.font : titleFont
+        ]
+        self.backgroundColor = .rmsBlueLightBG // l
+        self.selectedSegmentTintColor = .rmsWhite
+        self.selectedSegmentIndex = 1
+        self.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
+        self.layer.borderWidth = 2.5
+        self.layer.borderColor = UIColor.rmsBlueLightBG?.cgColor // l
+        self.setTitleTextAttributes([.foregroundColor : UIColor.rmsBlue ?? .black], for: .selected)
+        self.addConnerRadius()
+    }
+}
