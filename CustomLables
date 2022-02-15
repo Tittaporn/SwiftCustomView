@@ -1,0 +1,141 @@
+
+//  LablesRMS.swift
+
+import UIKit
+
+class Label20FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms20
+    }
+}
+
+class Label20BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms20?.bold()
+    }
+}
+
+class Label18FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms18
+    }
+}
+
+class Label18BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms18?.bold()
+    }
+}
+
+class Label16BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms16?.bold()
+    }
+}
+
+class Label16FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms16
+    }
+}
+
+class Label14BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms14?.bold()
+    }
+}
+
+class Label14FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms14
+    }
+}
+
+class Label12BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms12?.bold()
+    }
+}
+
+class Label12BoldRedFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .rmsRed
+        self.font = .rms12?.bold()
+    }
+}
+
+class LabelWhite12BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .white
+        self.font = .rms12?.bold()
+    }
+}
+
+class LabelBlue12BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .rmsBlue
+        self.font = .rms12?.bold()
+    }
+}
+
+class LabelRed12FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .rmsRed
+        self.font = .rms12
+    }
+}
+
+class Label12FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms12
+    }
+}
+
+class Label10BoldFontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms10?.bold()
+    }
+}
+
+class Label10FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .darkGray
+        self.font = .rms10
+    }
+}
+
+class LabelRed10FontRMS: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .rmsRed
+        self.font = .rms10
+    }
+}
+
