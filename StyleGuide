@@ -1,0 +1,37 @@
+
+//  StyleGuide.swift
+
+
+import UIKit
+
+extension UIColor {
+    static let rmsBlue = UIColor(named: "rmsBlue")
+    static let rmsBlueLightBG = UIColor(named: "rmsBlueLightBG")
+    static let rmsGray = UIColor(named: "rmsGray")
+    static let rmsRed = UIColor(named: "rmsRedTinNotMatch")
+    static let rmsGreen = UIColor(named: "rmsGreenTinMatch")
+    static let rmsGrayLightBG = UIColor(named: "rmsGrayLightBG")
+    static let rmsBlack = UIColor(named: "rmsBlack")
+    static let rmsWhite = UIColor(named: "rmsWhite")
+}
+
+extension UIFont {
+    static let rms20 = UIFont(name: RMSstring.rmsFont, size: 20)
+    static let rms18 = UIFont(name: RMSstring.rmsFont, size: 18)
+    static let rms16 = UIFont(name: RMSstring.rmsFont, size: 16)
+    static let rms14 = UIFont(name: RMSstring.rmsFont, size: 14)
+    static let rms12 = UIFont(name: RMSstring.rmsFont, size: 12)
+    static let rms10 = UIFont(name: RMSstring.rmsFont, size: 10)
+    static let rms8 = UIFont(name:  RMSstring.rmsFont, size: 8)
+    static let rmsButtonFont = UIFont(name: RMSstring.rmsFont, size: 14)?.bold()
+    
+    func withTraits(traits: UIFontDescriptor.SymbolicTraits) -> UIFont {
+        guard let descriptor = self.fontDescriptor
+                .withSymbolicTraits(traits) else { return UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.semibold) }
+        return UIFont(descriptor: descriptor, size: 0)
+    }
+    
+    func bold() -> UIFont {
+        return withTraits(traits: .traitBold)
+    }
+}
