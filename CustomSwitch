@@ -1,0 +1,17 @@
+
+//  SwitchRMS.swift
+
+import UIKit
+
+class SwitchRMS: UISwitch {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
+    }
+    
+    func setupView() {
+        self.onTintColor = .systemBlue
+        self.tintColor = .systemBlue
+        self.transform = CGAffineTransform(scaleX: 0.60, y: 0.60)
+    }
+}
