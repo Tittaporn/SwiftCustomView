@@ -1,0 +1,15 @@
+
+//  BarButtonItemRMS.swift
+
+import UIKit
+
+class BarButtonItemRMS: UIBarButtonItem {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupBarButtonItem()
+    }
+    
+    func setupBarButtonItem(){
+        self.tintColor = .white
+    }
+}
