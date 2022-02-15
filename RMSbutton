@@ -1,0 +1,63 @@
+
+//  RMSbutton.swift
+
+
+import UIKit
+
+class ButtonRMS: UIButton {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
+    }
+    
+    func setupView() {
+        self.backgroundColor = .rmsBlue
+        self.setTitleColor(.white, for: .normal)
+        self.addConnerRadius()
+        self.titleLabel?.font = .rmsButtonFont?.bold()
+        self.titleLabel?.textColor = .white
+    }
+}
+
+class ButtonSmallTaxRMS: UIButton {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
+    }
+    
+    func setupView() {
+        self.backgroundColor = .rmsBlue
+        self.setTitleColor(.white, for: .normal)
+        self.addConnerRadius()
+        self.titleLabel?.font = .rms12
+    }
+}
+
+class ButtonNoBackgroudRMS: UIButton {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
+    }
+    
+    func setupView() {
+        self.backgroundColor = .none
+        self.setTitleColor(.rmsBlue, for: .normal)
+        self.addConnerRadius()
+        self.titleLabel?.font = .rms12
+    }
+}
+
+class ButtonNoBackgroudFont10RMS: UIButton {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
+    }
+    
+    func setupView() {
+        self.backgroundColor = .none
+        self.setTitleColor(.rmsBlue, for: .normal)
+        self.addConnerRadius()
+        self.titleLabel?.font = .rms10
+    }
+}
+
