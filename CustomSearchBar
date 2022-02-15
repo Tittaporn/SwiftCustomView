@@ -1,0 +1,19 @@
+
+//  SearchBarRMS.swift
+
+import UIKit
+
+class SearchBarRMS: UISearchBar {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupView()
+    }
+    
+    func setupView() {
+        self.addConnerRadius()
+        self.searchTextField.textColor = .darkGray
+        self.layer.masksToBounds = true
+        self.tintColor = .black
+        self.searchTextField.font = .rms12 ?? UIFont.systemFont(ofSize: 14)
+    }
+}
