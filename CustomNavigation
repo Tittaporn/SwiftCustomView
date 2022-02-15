@@ -1,0 +1,45 @@
+
+//  NavigationRMS.swift
+
+import UIKit
+
+class NavigationControllerRMS: UINavigationController {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupNavigationBar()
+    }
+    
+    func setupNavigationBar(){
+        UINavigationBar.appearance().barTintColor = .rmsBlue
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: RMSstring.rmsFont, size: 18)?.bold() ?? UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor:UIColor.white]
+        if #available(iOS 15.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .rmsBlue
+            appearance.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name:  RMSstring.rmsFont, size: 18)?.bold() ?? UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor:UIColor.white]
+            navigationBar.standardAppearance = appearance
+            navigationBar.scrollEdgeAppearance = navigationBar.standardAppearance
+        }
+    }
+}
+
+class NavigationControllerLoginRMS: UINavigationController {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupNavigationBar()
+    }
+    
+    func setupNavigationBar(){
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: RMSstring.rmsTitleLogoFont, size: 18)?.bold() ?? UIFont.systemFont(ofSize: 18).bold(),NSAttributedString.Key.foregroundColor: UIColor.rmsBlue ?? UIColor.systemBlue]
+        if #available(iOS 15.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .clear
+            appearance.shadowColor = .clear
+            appearance.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name:  RMSstring.rmsTitleLogoFont, size: 18)?.bold() ?? UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor: UIColor.systemBlue]
+            navigationBar.standardAppearance = appearance
+            navigationBar.scrollEdgeAppearance = navigationBar.standardAppearance
+        }
+    }
+}
